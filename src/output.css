@@ -554,9 +554,12 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-red-800 {
-  --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity));
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-red-500 {
