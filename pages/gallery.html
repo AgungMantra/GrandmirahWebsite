@@ -1,87 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="src/output.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- gallery Section -->
     <section class="px-16 py-8">
-        <div class="flex flex-col md:grid md:grid-cols-3 gap-3 ">
-            
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery1.jpg" alt="Hanging Planters" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
-                Hanging Planters
-              </p>
-            </div>
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery2.jpg" alt="Planter Stand with Pots" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
-                Planter Stand with Pots
-              </p>
-            </div>
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery3.jpg" alt="Watering Cans" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
-                Watering Cans
-              </p>
-            </div>
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery4.jpg" alt="Metal Planters" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
-                Metal Planters
-              </p>
-            </div>
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery5.jpg" alt="Table Top Planters" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
-                Table Top Planters
-              </p>
-            </div>
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery6.jpg" alt="Wall Mounted Stands" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
-                Wall Mounted Stands
-              </p>
-            </div>
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery7.jpg" alt="Jute Plant Pots" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
-                Jute Plant Pots
-              </p>
-            </div>
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery8.jpg" alt="Bird Feeders" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition">
-                Bird Feeders
-              </p>
-            </div>
-            <div class="relative rounded overflow-hidden">
-              <img src="../imgasset/gallery/gallery9.jpg" alt="Hanging Birds" class="w-full">
-              <p
-                class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover-bg-opacity-60 transition">
-                Hanging Birds
-              </p>
-            </div>
-            
-          </div>
+      <div
+        class="flex flex-col text-center items-center justify-center mb-10 gap-1 px-4 md:px-0"
+      >
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+          GrandMirah Gallery
+        </h1>
+        <p class="w-full md:w-3/4 lg:w-1/2 text-base md:text-lg lg:text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          molestiae corrupti voluptates.
+        </p>
+      </div>
+
+      <div class="flex flex-col md:grid md:grid-cols-3 gap-3">
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery1.jpg"
+            alt="Hanging Planters"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Lobby Lounge
+          </p>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery2.jpg"
+            alt="Planter Stand with Pots"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Grand Mirah Boutique Hotel
+          </p>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery3.jpg"
+            alt="Watering Cans"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Swimming Pool & Garden View
+          </p>
+        </div>
+
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery4.jpg"
+            alt="Metal Planters"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Deluxe Room (Double Bed)
+          </p>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery5.jpg"
+            alt="Table Top Planters"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Deluxe Room (Twin Beds)
+          </p>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery6.jpg"
+            alt="Wall Mounted Stands"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Junior Suite Room
+          </p>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery7.jpg"
+            alt="Jute Plant Pots"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Puja Spa
+          </p>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery8.jpg"
+            alt="Bird Feeders"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Red Stone Coffee House
+          </p>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <img
+            src="../imgasset/gallery/gallery9.jpg"
+            alt="Bird Feeders"
+            class="w-full transition duration-500 ease-in-out transform group-hover:blur-md group-hover:scale-105"
+          />
+          <p
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-s text-center text-white font-roboto font-medium opacity-0 transition duration-500 ease-in-out group-hover:opacity-100 group-hover:bg-opacity-60 group-hover:shadow-lg"
+          >
+            Swimming Pool & Garden View
+          </p>
+        </div>
+      </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-</body>
+  </body>
 </html>
