@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grand Mirah Website</title>
-    <link href="src/output.css" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
@@ -21,10 +21,14 @@
             <a href="../index.html" class="hover:text-gray-400">Home</a>
           </li>
           <li class="text-center">
-            <a href="./pages/about.html" class="hover:text-gray-400">About us</a>
+            <a href="./pages/about.html" class="hover:text-gray-400"
+              >About us</a
+            >
           </li>
           <li class="text-center">
-            <a href="./pages/location.html" class="hover:text-gray-400">Location</a>
+            <a href="./pages/location.html" class="hover:text-gray-400"
+              >Location</a
+            >
           </li>
           <li class="text-center">
             <a href="./pages/rooms.html" class="hover:text-gray-400">Rooms</a>
@@ -35,10 +39,14 @@
             >
           </li>
           <li class="text-center">
-            <a href="./pages/gallery.html" class="hover:text-gray-400">Gallery</a>
+            <a href="./pages/gallery.html" class="hover:text-gray-400"
+              >Gallery</a
+            >
           </li>
           <li class="text-center">
-            <a href="./pages/booknow.html" class="hover:text-gray-400">Book Now</a>
+            <a href="./pages/booknow.html" class="hover:text-gray-400"
+              >Book Now</a
+            >
           </li>
           <li class="text-center">
             <a href="./pages/contactus.html" class="hover:text-gray-400"
@@ -63,22 +71,23 @@
           );
         "
       >
-        <!-- Text content -->
-        <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-black text-center"
-        >
-          <h2 class="text-4xl font-bold mb-4">Grand Mirah</h2>
-          <p class="text-lg">Boutique Hotel</p>
-        </div>
         <!-- Carousel wrapper -->
         <div class="relative h-full overflow-hidden">
           <!-- Item 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
               src="./imgasset/home-slide-25.jpg"
-              class="absolute block w-full h-auto object-cover opacity-70 hover:opacity-100 transition-opacity duration-500 ease-in-out"
-              alt="..."
+              alt="image"
+              class="h-full w-full object-cover object-center"
             />
+            <div class="absolute top-1/2 left-10 max-w-full md:left-20">
+              <div
+                class="bg-primary rounded-xl text-7xl font-bold text-black mix-blend-screen px-10 py-5"
+              >
+                Grand Mirah
+              </div>
+              <div class="text-white md:text-5xl py-4">Hotel</div>
+            </div>
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>

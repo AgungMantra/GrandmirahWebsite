@@ -1,17 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="src/output.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
-</head>
-<body>
-    
+    <style>
+      .group:hover .overlay::before {
+        opacity: 1;
+      }
+
+      .overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 8px;
+      }
+
+      .group:hover img {
+        transform: scale(1.05);
+      }
+
+      img {
+        transition: transform 0.3s ease-in-out;
+      }
+      .hover-shadow:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="fon">
+    <header></header>
+
+    <!-- Fasilities Img-->
+    <section class="px-16 py-8 flex flex-col gap-2">
+      <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="max-w-xl mx-auto text-center xl:max-w-2xl">
+          <h2
+            class="text-2xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl mb-3"
+          >
+            Grand Mirah Service or Facilities
+          </h2>
+          <p class="mb-6 text-gray-600">
+            Grand Mirah Boutique Hotel is staffed by a small but professional
+            team of staff who are on hand to provide sincere hospitality with a
+            warm Balinese smile. All essential services and facilities are
+            available to ensure that every stay is a memorable experience.
+          </p>
+        </div>
+      </div>
+
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/imgasset/gallery/gallery1.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+            <div
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-center pb-8"
+            >
+              <h2 class="text-4xl font-bold">Loby Lounge</h2>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/imgasset/gallery/gallery3.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+            <div
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-center pb-8"
+            >
+              <h2 class="text-4xl font-bold">Swimming Pool</h2>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/imgasset/gallery/gallery8.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+            <div
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-center pb-8"
+            >
+              <h2 class="text-4xl font-bold">Red Stone Coffee House</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+      >
+        <div class="group cursor-pointer relative">
+          <img
+            src="/imgasset/gallery/gallery7.jpg"
+            alt="Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <div class="overlay"></div>
+        </div>
+
+        <div class="group cursor-pointer relative">
+          <img
+            src="/imgasset/gallery/gallery4.jpg"
+            alt="Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <div class="overlay"></div>
+        </div>
+
+        <div class="group cursor-pointer relative">
+          <img
+            src="/imgasset/gallery/gallery5.jpg"
+            alt="Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <div class="overlay"></div>
+        </div>
+
+        <div class="group cursor-pointer relative">
+          <img
+            src="/imgasset/gallery/gallery6.jpg"
+            alt="Image 1"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <div class="overlay"></div>
+        </div>
+        <!-- Repeat this div for each image -->
+      </div>
+    </section>
+
+    <!--Penjelasan Service-->
+    <section class="px-16 py-8 flex flex-col gap-6">
+      <h1 class="text-2xl font-bold italic text-start">Description</h1>
+
+      <!-- Penjelasan 1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md hover-shadow">
+          <h1 class="text-xl font-semibold mb-2">Lobby Lounge</h1>
+          <p>
+            Located on the ground floor, the Lobby Lounge is a social space to
+            sit in comfort with family members or business colleagues. A full
+            menu of selected beverages and alcoholic drinks is also available to
+            enjoy whilst waiting for transportation.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover-shadow">
+          <h1 class="text-xl font-semibold mb-2">Swimming Pool</h1>
+          <p>
+            Designed for the pleasure of in-house guests, the swimming pool is a
+            tropical environment edged by a timber deck and a vertical garden.
+            There is a shallow section for children to play safely as well as
+            reclining sun beds for heightened relaxation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Penjelasan 2 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover-shadow flex items-center flex-col justify-center"
+        >
+          <img
+            src="../imgasset/gallery/gallery2.jpg"
+            alt="Gallery Image"
+            class="rounded-lg w-full h-auto object-cover mb-1"
+          />
+          <p>Grand Mirah Hotel</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover-shadow">
+          <h1 class="text-xl font-semibold mb-2">Red Stone Coffee House</h1>
+          <p class="mb-2">
+            Everyone is welcome at Red Stone Coffee House, a stylish spot to
+            eat, drink and meet in the heart of Denpasar. It serves light bites,
+            pastries and a flavoursome menu of Indonesian cuisine throughout the
+            day. The decor is highlighted by a collection of prints documenting
+            local history.
+          </p>
+          <img
+            src="/imgasset/gallery/gallery8.jpg"
+            class="w-1/2 h-auto"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-16 py-8 flex flex-col gap-6 other-services">
+      <h1 class="text-2xl font-bold text-center mb-8">Other Services</h1>
+      <ul
+        class="bg-white p-6 rounded-lg shadow-md hover-shadow services-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-items-center"
+      >
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">✈️</span>
+        <span>Airport Transfer</span>
+        </li>
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">🚌</span>
+        <span>Shuttle Service</span
+        </li>
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">🧴</span>
+        <span>Laundry Service</span>
+        </li>
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">🌐</span>
+        <span>WiFi</span>
+        </li>
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">🗺️</span>
+        <span>Tour Information</span>
+        </li>
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">🚗</span>
+        <span>Car Rental</span>
+        </li>
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">🅿️</span>
+        <span>Parking</span>
+        </li>
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">👮🏻</span>
+        <span>Security</span>
+        </li>
+        <li
+          class="service-item hover:scale-105 transition duration-300 ease-in-out"
+        >
+        <span class="icon">⚕️</span>
+        <span>Doctor on Call</span>
+        </li>
+      </ul>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-</body>
+  </body>
 </html>
