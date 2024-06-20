@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Mirah Website</title>
     <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    <header class="px-12 py-7 bg-primary w-full flex justify-between items-center text-white fixed z-50">
-        <img src="../imgasset/contact-logo-small.png" alt="logo">
+    <header class="px-7 sm:px-24 lg:px-12 py-7 bg-primary w-full flex flex-row md:flex-col md:gap-y-5 lg:flex-row justify-between items-center text-white fixed z-50">
+        <img src="../imgasset/contact-logo-small.png" alt="logo" class="w-32 sm:w-48">
         <nav>
-            <ul class="flex w-[700px] gap-x-5 items-center justify-between text-sm">
-                <li class="text-center"><a href="../index.html" class="hover:text-gray-400">Home</a></li>
-                <li class="text-center"><a href="./about.html" class="hover:text-gray-400">About us</a></li>
-                <li class="text-center"><a href="./location.html" class="hover:text-gray-400">Location</a></li>
-                <li class="text-center"><a href="./rooms.html" class="hover:text-gray-400">Rooms</a></li>
-                <li class="text-center"><a href="./service.html" class="hover:text-gray-400">Services & Facilities</a></li>
-                <li class="text-center"><a href="./gallery.html" class="hover:text-gray-400">Gallery</a></li>
-                <li class="text-center"><a href="./booknow.html" class="hover:text-gray-400">Book Now</a></li>
-                <li class="text-center"><a href="./contactus.html" class="hover:text-gray-400">Contact Us</a></li>
+            <ul class="absolute top-20 left-0 w-full bg-primary py-5 sm:py-10 md:py-0 -translate-y-[50rem] md:translate-y-0 transition-all duration-700 -z-10 md:static md:w-[700px] items-center justify-between text-sm md:flex" id="menuList">
+                <li class="pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="../index.html" class="hover:text-gray-400">Home</a></li>
+                <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="./about.html" class="hover:text-gray-400">About us</a></li>
+                <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="./location.html" class="hover:text-gray-400">Location</a></li>
+                <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="./rooms.html" class="hover:text-gray-400">Rooms</a></li>
+                <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="./service.html" class="hover:text-gray-400">Services & Facilities</a></li>
+                <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="./gallery.html" class="hover:text-gray-400">Gallery</a></li>
+                <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="./booknow.html" class="hover:text-gray-400">Book Now</a></li>
+                <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="./contactus.html" class="hover:text-gray-400">Contact Us</a></li>
             </ul>
+            <button class="md:hidden bg-opacity-50" id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-width="2"><path d="M5 5L19 19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 5L19 19;M5 5L19 5"/></path><path d="M12 12H12" opacity="0"><animate fill="freeze" attributeName="d" begin="0.2s" dur="0.4s" values="M12 12H12;M5 12H19"/><set attributeName="opacity" begin="0.2s" to="1"/></path><path d="M5 19L19 5"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 19L19 5;M5 19L19 19"/></path></g></svg>
+            </button>
         </nav>
     </header>
-    <section class="px-20 py-10 flex flex-col items-center">
+    <section class="px-7 sm:px-20 py-10 flex flex-col items-center">
         <h1 class="text-lg">Grand Mirah Boutique Hotel is a smart property that injects new life into the old quarter of central Denpasar. It features a total of 32 modern Balinese rooms and supporting facilities to anticipate the needs of business and leisure guests.</h1>
-        <div class="grid grid-cols-3 gap-6 py-10 w-3/4 justify-center">
+        <div class="grid grid-cols-3 gap-2 sm:gap-6 py-10 w-full md:w-3/4 justify-center">
             <div class="overflow-hidden rounded-xl col-span-2 ">
                 <img src="../imgasset/img-about-1.jpg" class="w-full h-full object-cover hover:scale-125 transition-all"></img>
             </div>
@@ -40,7 +44,7 @@
         </div>
         <h1 class="text-lg">Locally owned, Grand Mirah Boutique Hotel has been in the same Balinese family since the 1950’s and passed down through each successive generation. It was totally transformed in 2015 using a fresh design concept that blends elements of traditional and contemporary architecture.</h1>
         <h1 class="text-lg mt-5">Grand Mirah Boutique Hotel provides a comfortable base that represents real value for money. With its resort ambience and warm Balinese hospitality, the hotel is a true gem in the heart of the city. It also has a full-sized swimming pool, restaurant and multi-functional meeting space.</h1>
-        <a href="../index.html" class="text-blue-500 underline mt-32">home</a>
     </section>
+    <script src="../script.js"></script>
 </body>
 </html>
