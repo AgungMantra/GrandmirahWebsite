@@ -4,14 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="src/output.css" rel="stylesheet" />
+    <link href="../src/output.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    
+    <header class="px-12 py-7 bg-primary w-full flex justify-between items-center text-white fixed z-50">
+      <img src="../imgasset/contact-logo-small.png" alt="logo" />
+      <nav>
+        <ul class="flex w-[700px] gap-x-5 items-center justify-between text-sm">
+          <li class="text-center">
+            <a href="../index.html" class="hover:text-gray-400">Home</a>
+          </li>
+          <li class="text-center">
+            <a href="../pages/about.html" class="hover:text-gray-400"
+              >About us</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/location.html" class="hover:text-gray-400"
+              >Location</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/rooms.html" class="hover:text-gray-400">Rooms</a>
+          </li>
+          <li class="text-center">
+            <a href="../pages/service.html" class="hover:text-gray-400"
+              >Services & Facilities</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/gallery.html" class="hover:text-gray-400"
+              >Gallery</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/booknow.html" class="hover:text-gray-400"
+              >Book Now</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/contactus.html" class="hover:text-gray-400"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="px-7 sm:px-20 pt-36 pb-7 flex flex-col">
+      <p class="text-center">Accommodation at Grand Mirah Boutique Hotel is a combination of 32 rooms and suites in a choice of different categories. Each room is styled for personal comfort with a modern Balinese decor featuring customized furnishings, essential amenities and statement artworks.</p>
+      <p class="text-center mt-4 italic">*Connecting rooms are available for the convenience of families and friends travelling together.</p>
+      <div class="border-gray-300 border-2 w-full flex flex-col lg:flex-row rounded-xl mt-10">
+        <div class="overflow-hidden w-full h-60 sm:h-72 lg:h-auto lg:w-1/2 rounded-t-xl md:rounded-l-xl">
+          <img src="../imgasset/gallery/gallery6.jpg" alt="" class="w-full h-full object-cover hover:scale-125 transition-all">
+        </div>
+        <div class="w-full lg:w-1/2 px-5 sm:px-10 py-7 flex flex-col justify-center items-center">
+          <h1 class="w-full text-left font-bold text-primary text-2xl">Junior Suite</h1>
+          <p class="mt-4">This tastefully-appointed category comes complete with modern home comforts to ensure a quality stay. An understated decor, highlighted by wood and neutral shades, promotes heightened relaxation. The en-suite bathroom has separate tub and shower facilities. </p>
+        </div>
+      </div>
+      <div class="border-gray-300 border-2 w-full flex flex-col lg:flex-row rounded-xl mt-10">
+        <div class="overflow-hidden w-full h-60 sm:h-72 lg:h-auto lg:w-1/2 rounded-t-xl lg:rounded-l-xl">
+          <img src="../imgasset/gallery/gallery4.jpg" alt="" class="w-full h-full object-cover hover:scale-125 transition-all">
+        </div>
+        <div class="w-full lg:w-1/2 px-5 sm:px-10 py-7 flex flex-col justify-center items-center">
+          <h1 class="w-full text-left font-bold text-primary text-2xl">Deluxe Room</h1>
+          <p class="mt-4">Created for comfort, this room is the perfect category for leisure guests and business delegates to return to at the end of each day. It has a soothing decor with uplifting views over the pool and vertical garden. The en-suite bathroom is a functional facility with a shower and vanity.</p>
+        </div>
+      </div>
+    </section>
+    <script src="../script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>

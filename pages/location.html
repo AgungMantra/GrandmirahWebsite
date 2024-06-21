@@ -3,15 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="src/output.css" rel="stylesheet" />
+    <title>Grand Mirah Website</title>
+    <link href="../src/output.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <header
+      class="px-12 py-7 bg-primary w-full flex justify-between items-center text-white fixed z-50"
+    >
+      <img src="../imgasset/contact-logo-small.png" alt="logo" />
+      <nav>
+        <ul class="flex w-[700px] gap-x-5 items-center justify-between text-sm">
+          <li class="text-center">
+            <a href="../index.html" class="hover:text-gray-400">Home</a>
+          </li>
+          <li class="text-center">
+            <a href="../pages/about.html" class="hover:text-gray-400"
+              >About us</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/location.html" class="hover:text-gray-400"
+              >Location</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/rooms.html" class="hover:text-gray-400">Rooms</a>
+          </li>
+          <li class="text-center">
+            <a href="../pages/service.html" class="hover:text-gray-400"
+              >Services & Facilities</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/gallery.html" class="hover:text-gray-400"
+              >Gallery</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/booknow.html" class="hover:text-gray-400"
+              >Book Now</a
+            >
+          </li>
+          <li class="text-center">
+            <a href="../pages/contactus.html" class="hover:text-gray-400"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <section class="px-7 sm:px-20 pt-36 pb-7 flex flex-col">
+    <div class="flex flex-col lg:flex-row gap-10">
+      <div class="w-full h-60 sm:h-96 lg:h-auto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15777.554383398481!2d115.20045231161677!3d-8.654541657892533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2413801e5df33%3A0xd668589fd7b122d2!2sJl.%20Kaliasem%20Gg.%20II%20No.1%2C%20Dangin%20Puri%20Kauh%2C%20Kec.%20Denpasar%20Utara%2C%20Kota%20Denpasar%2C%20Bali%2080232%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1718868196821!5m2!1sen!2sus" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="lg:w-[60rem] xl:w-[100rem] flex flex-col justify-center">
+        <h1 class="font-bold text-xl text-primary">Grand Mirah Boutique Hotel</h1>
+        <p class="mt-4">Grand Mirah Boutique Hotel is located in the heart of Denpasar and is close to some of the island’s most historical and culturally inspiring sites. It is within easy walking distance to Puputan Square, Jagatnatha Temple and Bali’s Provincial State Museum.</p>
+        <p class="mt-4">Nearby places of interest include Gajah Mada Street and Pasar Badung,a traditional marketplace selling everything from fresh food to ceremonial items, clothing and souvenirs. There is also Pasar Burung where different species of birds and live animals are sold.</p>
+        <p class="mt-4">Grand Mirah Boutique Hotel is approximately 30 minutes by car from Bali’s Ngurah Rai International Airport. It is strategically positioned to enjoy local cuisine and there are many small food stalls in the immediate area.</p>
+        <div class="flex mt-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 mr-3" viewBox="0 0 24 24"><path fill="#003a70" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>
+          <p>Jl Kaliasem No 1 Denpasar 80232 Bali - Indonesia</p>
+        </div>
+        <div class="flex mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 mr-3" viewBox="0 0 24 24"><path fill="#003a70" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+          <p>T + 62 361 4723330, <span class="mr-3"></span> F + 62 361 240321</p>
+        </div>
+        <div class="flex mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 mr-3" viewBox="0 0 24 24"><path fill="#003a70" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg>
+          <p>www.grandmirah.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>
