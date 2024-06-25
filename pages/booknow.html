@@ -5,101 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booknow</title>
     <link href="../src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/style.css">
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
-  <body>
-    <header
-      id="Srscale"
-      class="px-7 sm:px-24 lg:px-12 py-7 bg-primary w-full flex flex-row lg:flex-row md:flex-col md:gap-y-5 justify-between items-center text-white fixed z-50"
-    >
-      <img
-        src="../imgasset/contact-logo-small.png"
-        alt="logo"
-        class="w-32 sm:w-48"
-      />
+  <body class="overflow-x-hidden">
+    <header id="Srscale" class="px-7 sm:px-24 lg:px-12 py-7 bg-primary w-full flex lg:flex-row md:gap-y-5 justify-between items-center text-white fixed z-50">
+      <img src="../imgasset/contact-logo-small.png" alt="logo" class="w-32 sm:w-48"/>
       <nav>
-        <ul
-          class="absolute top-20 w-full bg-primary py-5 sm:py-10 md:py-0 left-0 -translate-y-[50rem] md:translate-y-0 transition-all duration-700 -z-10 md:static md:w-[700px] xl:w-[850px] items-center justify-between text-sm xl:text-lg md:flex"
-          id="menuList"
-        >
-          <li class="pl-7 sm:pl-24 md:pl-0">
-            <a href="../index.html" class="hover:text-gray-400">HOME</a>
-          </li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0">
-            <a href="./about.html" class="hover:text-gray-400">ABOUT US</a>
-          </li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0">
-            <a href="./location.html" class="hover:text-gray-400">LOCATION</a>
-          </li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0">
-            <a href="./rooms.html" class="hover:text-gray-400">ROOMS</a>
-          </li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0">
-            <a href="./service.html" class="hover:text-gray-400"
-              >SERVICES & FACILITIES</a
-            >
-          </li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0">
-            <a href="./gallery.html" class="hover:text-gray-400">GALLERY</a>
-          </li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0">
-            <a href="./booknow.html" class="hover:text-gray-400">BOOK NOW</a>
-          </li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0">
-            <a href="./contactus.html" class="hover:text-gray-400"
-              >CONTACT US</a
-            >
-          </li>
+        <ul class="absolute top-20 w-full bg-primary py-5 sm:py-10 md:py-0 left-0 -translate-y-[50rem] md:translate-y-0 transition-all duration-700 -z-10 items-center justify-between text-sm xl:text-lg md:flex" id="menuList">
+          <li class="pl-7 sm:pl-24 md:pl-0"><a href="../index.html" class="hover:text-gray-400">HOME</a></li>
+          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="about.html" class="hover:text-gray-400">ABOUT US</a></li>
+          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="location.html" class="hover:text-gray-400">LOCATION</a></li>
+          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="rooms.html" class="hover:text-gray-400">ROOMS</a></li>
+          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="service.html" class="hover:text-gray-400">SERVICES & FACILITIES</a></li>
+          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="gallery.html" class="hover:text-gray-400">GALLERY</a></li>
+          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="booknow.html" class="hover:text-gray-400">BOOK NOW</a></li>
+          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="contactus.html" class="hover:text-gray-400">CONTACT US</a></li>
         </ul>
         <button class="md:hidden bg-opacity-50" id="menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-7"
-            viewBox="0 0 24 24"
-          >
-            <g
-              fill="none"
-              stroke="white"
-              stroke-linecap="round"
-              stroke-width="2"
-            >
-              <path d="M5 5L19 19">
-                <animate
-                  fill="freeze"
-                  attributeName="d"
-                  dur="0.4s"
-                  values="M5 5L19 19;M5 5L19 5"
-                />
-              </path>
-              <path d="M12 12H12" opacity="0">
-                <animate
-                  fill="freeze"
-                  attributeName="d"
-                  begin="0.2s"
-                  dur="0.4s"
-                  values="M12 12H12;M5 12H19"
-                />
-                <set attributeName="opacity" begin="0.2s" to="1" />
-              </path>
-              <path d="M5 19L19 5">
-                <animate
-                  fill="freeze"
-                  attributeName="d"
-                  dur="0.4s"
-                  values="M5 19L19 5;M5 19L19 19"
-                />
-              </path>
-            </g>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-width="2"><path d="M5 5L19 19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 5L19 19;M5 5L19 5"/></path><path d="M12 12H12" opacity="0"><animate fill="freeze" attributeName="d" begin="0.2s" dur="0.4s" values="M12 12H12;M5 12H19"/><set attributeName="opacity" begin="0.2s" to="1" /></path><path d="M5 19L19 5"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 19L19 5;M5 19L19 19"/></path></g></svg>
         </button>
       </nav>
     </header>
 
-    <section class="px-7 sm:px-20 pt-36 pb-20 flex flex-col items-center">
+    <section class="px-7 sm:px-20 pt-36 pb-20 flex flex-col items-center" id="sec1">
       <div id="Srscale" class="relative w-full">
         <img
           class="h-36 w-full object-cover rounded-md"
