@@ -58,3 +58,17 @@ function type() {
 
 type();
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const currentLocation = window.location.pathname;
+  const menuItems = document.querySelectorAll(".flex-row li a");
+
+  menuItems.forEach(item => {
+    if (item.getAttribute("href") === currentLocation) {
+      item.parentElement.classList.add("active");
+    }
+  });
+});
+
+document.getElementById('hotelGallery').classList.add('active');
+document.getElementById('destinationgallery').classList.add('active');
