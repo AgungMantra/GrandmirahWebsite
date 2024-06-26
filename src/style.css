@@ -34,3 +34,13 @@
 .link:hover {
   transform: scale(1.05);
 }
+#navactive{
+  color: #ebc297;
+  box-shadow: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0) 0%,
+    rgb(69, 211, 22) 12.5%,
+    rgb(65, 22, 221) 87.5%,
+    rgba(20, 225, 222, 0) 100%
+  );  
+}

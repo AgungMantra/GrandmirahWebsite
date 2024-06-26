@@ -13,18 +13,18 @@
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body class="overflow-x-hidden">
-    <header id="Srscale" class="px-7 sm:px-24 lg:px-12 py-7 bg-primary w-full flex lg:flex-row md:gap-y-5 justify-between items-center text-white fixed z-50">
+    <header id="Srscale" class="drop-shadow-xl px-7 sm:px-24 lg:px-12 py-7 bg-primary w-full flex lg:flex-row md:gap-y-5 justify-between items-center text-white fixed z-50">
       <img src="../imgasset/contact-logo-small.png" alt="logo" class="w-32 sm:w-48"/>
       <nav>
         <ul class="absolute top-20 w-full bg-primary py-5 sm:py-10 md:py-0 left-0 -translate-y-[50rem] md:translate-y-0 transition-all duration-700 -z-10 items-center justify-between text-sm xl:text-lg md:flex" id="menuList">
-          <li class="pl-7 sm:pl-24 md:pl-0"><a href="../index.html" class="hover:text-gray-400">HOME</a></li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="about.html" class="hover:text-gray-400">ABOUT US</a></li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="location.html" class="hover:text-gray-400">LOCATION</a></li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="rooms.html" class="hover:text-gray-400">ROOMS</a></li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="service.html" class="hover:text-gray-400">SERVICES & FACILITIES</a></li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="gallery.html" class="hover:text-gray-400">GALLERY</a></li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="booknow.html" class="hover:text-gray-400">BOOK NOW</a></li>
-          <li class="pt-4 pl-7 sm:pl-24 md:pt-0 md:pl-0"><a href="contactus.html" class="hover:text-gray-400">CONTACT US</a></li>
+          <li class="pl-7 border-r border-white transition-all pr-2 sm:pl-24 md:pl-0"><a href="../index.html" class="hover:text-gray-400">HOME</a></li>
+          <li class="pt-4 pl-7 border-r border-white transition-all pr-2 sm:pl-24 md:pt-0 md:pl-0"><a href="about.html" class="hover:text-gray-400">ABOUT US</a></li>
+          <li class="pt-4 pl-7 border-r border-white transition-all pr-2 sm:pl-24 md:pt-0 md:pl-0"><a href="location.html" class="hover:text-gray-400">LOCATION</a></li>
+          <li class="pt-4 pl-7 border-r border-white transition-all pr-2 sm:pl-24 md:pt-0 md:pl-0"><a href="rooms.html" class="hover:text-gray-400">ROOMS</a></li>
+          <li class="pt-4 pl-7 border-r border-white transition-all pr-2 sm:pl-24 md:pt-0 md:pl-0"><a href="service.html" class="hover:text-gray-400">SERVICES & FACILITIES</a></li>
+          <li id="navactive" class="pt-4 pl-7 border-r border-white transition-all pr-2 sm:pl-24 md:pt-0 md:pl-0"><a href="gallery.html" class="hover:text-gray-400">GALLERY</a></li>
+          <li class="pt-4 pl-7 border-r border-white transition-all pr-2 sm:pl-24 md:pt-0 md:pl-0"><a href="booknow.html" class="hover:text-gray-400">BOOK NOW</a></li>
+          <li class="pt-4 pl-7 border-r border-white transition-all pr-2 sm:pl-24 md:pt-0 md:pl-0"><a href="contactus.html" class="hover:text-gray-400">CONTACT US</a></li>
         </ul>
         <button class="md:hidden bg-opacity-50" id="menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-width="2"><path d="M5 5L19 19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 5L19 19;M5 5L19 5"/></path><path d="M12 12H12" opacity="0"><animate fill="freeze" attributeName="d" begin="0.2s" dur="0.4s" values="M12 12H12;M5 12H19"/><set attributeName="opacity" begin="0.2s" to="1" /></path><path d="M5 19L19 5"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 19L19 5;M5 19L19 19"/></path></g></svg>
@@ -35,9 +35,9 @@
     <!-- gallery Section -->
     <section class="px-7 sm:px-20 pb-8 pt-36" id="sec1">
       <div
-        class="flex flex-col text-center items-center justify-center mb-10 gap-1 md:px-0"
+        class="flex flex-col text-center items-center justify-center mb-10 gap-1 md:px-0 "
       >
-        <div id="Srscale" class="relative w-full" />
+        <div id="Srscale" class="relative w-full " />
         <img
           class="h-36 w-full object-cover rounded-md"
           src="../imgasset/gallery/gallery2.jpg"
@@ -45,15 +45,14 @@
         />
         <div class="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
         <div class="absolute inset-0 flex items-center justify-center">
-          <h2 class="text-white text-3xl font-bold">Destination Gallery</h2>
+          <h2 class="text-white text-3xl font-bold">Gallery</h2>
         </div>
-
       </div>
       
-      <div class="flex-row flex gap-1 px-2 py-1 items-center justify-center list-none my-3 border-b-2 border-primary text-lg">
-        <li id="hotelGallery" class="rounded-lg p-2" class="link transition-transform duration-300 ease-in-out hover:text-primary" ><a href="./gallery.html">Hotel Gallery</a></li>
+      <div class="flex-row flex gap-1 px-2 py-1 items-center justify-center list-none my-3 border-b-2 border-primary text-sm">
+        <li id="hotelGallery" class="rounded-lg py-2 w-32" class="link transition-transform duration-300 ease-in-out hover:text-primary" ><a href="./gallery.html">Hotel Gallery</a></li>
         <li class="border-primary"></li>
-        <li id="destinationgalery" class="active p-2 rounded-lg shadow-lg link" class="link transition-transform duration-300 ease-in-out hover:text-primary"><a href="./destinationgallery.html" >Destination Gallery</a></li>
+        <li id="destinationgalery" class="active py-2 w-44 rounded-lg shadow-lg link" class="link transition-transform duration-300 ease-in-out hover:text-primary"><a href="./destinationgallery.html" >Destination Gallery</a></li>
       </div>
 
       <div class="flex flex-col md:grid md:grid-cols-3 gap-3 mt-3" id="Srscale">
