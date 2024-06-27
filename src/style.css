@@ -5,7 +5,12 @@
   
   #menuList {
     position: static;
-    width: 700px;
+    font-size : 12px;
+  }
+
+  #menuList li {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -13,12 +18,15 @@
   #sec1 {
     padding-top: 200px;
   }
+
+  #menuList {
+    width: 700px;
+  }
 }
 
 @media (min-width: 1280px) {
   #menuList {
     font-size: 16px;
-    width: 850px
   }
 }
 

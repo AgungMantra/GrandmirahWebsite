@@ -789,14 +789,6 @@ video {
   height: 100%;
 }
 
-.max-h-96 {
-  max-height: 24rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-3 {
   width: 0.75rem;
 }
@@ -1050,10 +1042,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-current {
-  background-color: currentColor;
 }
 
 .bg-opacity-40 {
@@ -1361,7 +1349,7 @@ video {
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -1745,4 +1733,3 @@ body {
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
-
